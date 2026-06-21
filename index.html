@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>наше</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== ЭКРАН ВХОДА ===== -->
+<div id="login-screen">
+    <div class="login-card">
+        <div class="login-heart">♥</div>
+        <h2>тише, это секрет</h2>
+        <p class="login-sub">введи имя и пароль, чтобы войти</p>
+
+        <form id="login-form" autocomplete="off">
+            <input type="text" id="login-name" placeholder="имя" autocomplete="off">
+            <input type="password" id="login-pass" placeholder="пароль" autocomplete="off">
+            <button type="submit">войти</button>
+        </form>
+
+        <p id="login-error">неверно. попробуй ещё раз ♡</p>
+    </div>
+</div>
+
+<!-- ===== ГЛАВНАЯ СТРАНИЦА ===== -->
+<div id="main-page">
+
+    <div class="hearts-bg" id="hearts-bg"></div>
+
+    <header class="hero">
+        <h1 id="big-word">Всегда рядом</h1>
+    </header>
+
+    <main class="content-row">
+
+        <div class="intro-text">
+            <p> Небольшое напоминание на нашей не забываемой встрече<br>
+                Хочу чтобы ты знала что я всегда буду рядом и всегда постараюсь подержать что бы не случилось<br>
+                Люблю тебя❤️</p>
+        </div>
+
+    </main>
+
+    <footer class="timer-bar">
+        <p class="timer-label">мы вместе уже</p>
+        <div class="timer" id="timer">
+            <div class="t-unit"><span id="t-days">0</span><small>дней</small></div>
+            <div class="t-sep">:</div>
+            <div class="t-unit"><span id="t-hours">00</span><small>часов</small></div>
+            <div class="t-sep">:</div>
+            <div class="t-unit"><span id="t-minutes">00</span><small>минут</small></div>
+            <div class="t-sep">:</div>
+            <div class="t-unit"><span id="t-seconds">00</span><small>секунд</small></div>
+            <div class="t-sep">:</div>
+            <div class="t-unit t-ms"><span id="t-ms">000</span><small>миллисек</small></div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
